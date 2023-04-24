@@ -7,10 +7,10 @@ public class InverteString {
             Scanner scan = new Scanner(System.in);
             System.out.print("Digite uma string: ");
             String texto = scan.nextLine();
-            String textoInvertido = "";
+            StringBuilder textoInvertido = new StringBuilder();
 
             for (int i = texto.length() - 1; i >= 0; i--) {
-                textoInvertido += texto.charAt(i);
+                textoInvertido.append(texto.charAt(i));
             }
 
             System.out.println("A string invertida é: " + textoInvertido);
